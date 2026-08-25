@@ -1,0 +1,27 @@
+{
+  "name": "restaurant-ordering-backend",
+  "version": "1.0.0",
+  "description": "AI-Based Restaurant Ordering and Delivery Management System - Backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "db:setup": "psql -h ${DB_HOST:-localhost} -p ${DB_PORT:-5432} -U ${DB_USER:-postgres} -d ${DB_NAME:-food_delivery_db} -f database/schema.sql"
+  },
+  "keywords": [
+    "restaurant",
+    "ordering",
+    "delivery",
+    "postgresql",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "pg": "^8.13.1"
+  }
+}
