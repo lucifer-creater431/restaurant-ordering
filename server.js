@@ -33,3 +33,7 @@ app.listen(PORT, () => {
 const orderRoutes = require('./src/routes/orderRoutes');
 const inventoryRoutes = require('./src/routes/inventoryRoutes');
 const webhookRoutes = require('./src/routes/webhookRoutes');
+const orderRoutes = require('./src/routes/orderRoutes');
+app.use('/api/orders', orderRoutes);
+app.use('/api/inventory', inventoryRoutes);
+app.use('/api/webhooks', webhookRoutes);
