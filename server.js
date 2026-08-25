@@ -30,3 +30,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+const orderRoutes = require('./src/routes/orderRoutes');
+const inventoryRoutes = require('./src/routes/inventoryRoutes');
+const webhookRoutes = require('./src/routes/webhookRoutes');
